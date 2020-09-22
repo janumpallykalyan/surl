@@ -1,0 +1,18 @@
+.app-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: baseline;
+
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.app-title {
+  color: #EB4A42;
+  text-decoration: underline;
+}
+
+.app-subtitle {
+  color: #AAAAAA;
+}

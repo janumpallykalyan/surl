@@ -1,0 +1,51 @@
+version: '2'
+services:
+  mongodb:
+    image: mongo:4.4.1
+    ports:
+      - "27017:27017"
+    command: mongod
+
+#  app:
+#    build: server
+#    expose:
+#      - "8080"
+#    links:
+#      - mongodb
+#      - redis
+#    environment:
+#        SPRING_DATA_MONGODB_URI: mongodb://mongodb/SURL
+#        SPRING_APPLICATION_NAME: surl-service
+#    depends_on:
+#       - mongodb
+#
+#  app2:
+#    build: server
+#    expose:
+#      - "8080"
+#    links:
+#      - mongodb
+#      - redis
+#    environment:
+#        SPRING_DATA_MONGODB_URI: mongodb://mongodb/SURL
+#        SPRING_APPLICATION_NAME: surl-service
+#    depends_on:
+#       - mongodb
+
+#  nginx:
+#   container_name: proxy-nginx
+#   build:
+#    context:  ./web
+#    dockerfile: Dockerfile
+#   ports:
+#   - 80:80
+#   depends_on:
+#   - app
+#   - app2
+
+
+  redis:
+    image: redis
+    ports:
+      - "6379:6379"
+

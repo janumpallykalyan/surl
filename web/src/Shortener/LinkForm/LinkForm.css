@@ -1,0 +1,38 @@
+.url-form form {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.url-input {
+  flex-grow: 11;
+  padding: 10px;
+  border: none;
+  border-radius: 3px;
+  background-color: #EAEAEA;
+  color: #555555;
+}
+
+.shorten-button[type=submit] {
+  flex-grow: 1;
+  background-color: #EB4A42;
+  border: none;
+  border-radius: 3px;
+  color: white;
+  padding: 4px;
+  text-decoration: none;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.shorten-button-disabled[type=submit] {
+  flex-grow: 1;
+  background-color: #E0E0E0;
+  border: none;
+  border-radius: 3px;
+  color: #BFBFBF;
+  padding: 4px;
+  text-decoration: none;
+  margin-left: 10px;
+  cursor: pointer;
+}
